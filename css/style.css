@@ -1,0 +1,343 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #FF7E7E;
+    height: 80px;
+    position: relative;
+    top: 0;
+}
+
+header>* {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 30px 0 30px;
+}
+
+header img {
+    width: 50px;
+}
+
+header>ul {
+    right: 0;
+    text-decoration: none;
+}
+
+header,
+header a {
+    color: white;
+}
+
+header a:nth-child(2) {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 100px;
+}
+
+header>ul li {
+    margin: 10px;
+    font-weight: 600;
+    display: inline-block;
+    list-style: none;
+    transition: background-color 0.5s ease-in-out;
+}
+
+header>ul li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.header-responsive{
+    width: 100vw;
+    height: 100vh;
+    display: flex !important;
+    background-color: #FF7E7E; 
+    top: 0; left: 0; 
+    transform: initial;
+    margin: 0; position: fixed; 
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column; 
+    z-index: 20;
+}
+#hamburger-menu{
+    display: none;
+}
+.page-main {
+    display: block;
+    margin: auto;
+    width: 80%;
+    margin-top: 100px;
+}
+
+.bienvenue {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.bienvenue>img {
+    width: 500px;
+    align-self: center;
+    border-radius: 5px;
+}
+
+.bienvenue>.texte {
+    width: 500px;
+    margin-left: 20px;
+}
+
+.texte p {
+    text-align: justify;
+    font-size: 20px;
+}
+
+.separator {
+    height: 3px;
+    background-color: #FF7E7E;
+    width: 100%;
+    margin: 20px 0;
+border-radius: 3px;
+}
+
+.a-propos {
+    margin-bottom: 100px;
+}
+
+.title-category {
+    text-align: center;
+}
+
+.picture-propos {
+    width: 100%;
+    height: 500px;
+    background-image: url("../img/team.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    position: relative;
+}
+
+.infos-picture-propos {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    border-radius: 5px;
+}
+
+.picture-propos-text {
+    position: absolute;
+    bottom: 0;
+    margin: 10px;
+}
+
+.picture-propos-text p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.picture-propos-text h3 {
+    font-size: 30px;
+}
+
+input:not(input[type="submit"]),
+textarea {
+    border: none;
+    border-bottom: 2px solid #FF7E7E;
+    resize: none;
+    outline: none;
+    font-family: "Montserrat";
+    width: 30vw;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.form-top {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+
+}
+
+.form-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-left>div * {
+    display: block;
+}
+
+.form-right * {
+    display: block;
+}
+
+.form-contact input[type="submit"] {
+    background-color: #FF7E7E;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    font-family: "Montserrat";
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 80px;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+}
+
+.form-contact input[type="submit"]:hover {
+    transform: translateY(-5px);
+}
+
+.commentaire {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+
+.commentaire-pp {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.commentaire-text {
+    margin-left: 20px;
+}
+
+.commentaire-text p {
+    text-align: justify;
+}
+
+footer {
+    height: 80px;
+    position: relative;
+    background-color: #FF7E7E;
+}
+
+footer h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background-color: #FF7E7E;
+    top: 0;
+    transition: top 0.5s ease-in-out;
+}
+
+.loader p {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 1100px) {
+    .bienvenue>img {
+        width: 300px;
+    }
+
+    .texte p {
+        font-size: 16px;
+    }
+
+    .texte h1 {
+        font-size: 20px;
+    }
+
+    .bienvenue {
+        margin-bottom: 50px;
+    }
+
+    .a-propos {
+        margin-bottom: 100px;
+    }
+
+    .title-category {
+        text-align: center;
+    }
+
+    .picture-propos {
+        width: 100%;
+        height: 300px;
+    }
+
+    .picture-propos-text {
+        margin: 10px;
+    }
+
+    .picture-propos-text p {
+        font-size: 16px;
+    }
+
+    .picture-propos-text h3 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .bienvenue {
+        display: flex;
+        flex-direction: column;
+    }
+    .bienvenue > .texte{
+        width: initial;
+    }
+    .texte p{
+        font-size: 12px;
+    }
+    input:not(input[type="submit"]), textarea, input[type="submit"], label, .form-contact input[type="submit"]{
+        font-size: 16px;
+    }
+    .commentaire-text p {
+        font-size: 16px;
+    }
+    .picture-propos-text p {
+        font-size: 12px;
+    }
+    .form-top{
+        flex-direction: column;
+        width: 100%;
+    }
+    input:not(input[type="submit"]), textarea {
+        width: 100%;
+    }
+    .commentaire-text p {
+        font-size: 12px;
+    }
+    #changing-menu{
+        display: none;
+    }
+    #hamburger-menu{
+        display: block;
+    }
+}

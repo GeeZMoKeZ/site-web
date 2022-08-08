@@ -1,0 +1,32 @@
+.email-notification img{
+    width: 100px;
+    position: fixed;
+    right: 10px;
+    bottom:10px;
+    z-index:10;
+}
+
+.modal{
+    display: none;
+    background-color: rgba(0,0,0,0.5);
+    width:100%;
+    height:100%;
+    position: fixed;
+    z-index: 100;
+}
+.modal-container{
+    position: absolute;
+    top:50%;
+    Left:50%;
+    transform: translate(-50%,-50%);
+
+    display: inline-block;
+    background-color: white;
+    border-radius: 5px;
+
+    text-align: center;
+}
+.modal-container input{
+    width: initial;
+    margin: 20px;
+}
